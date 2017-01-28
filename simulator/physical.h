@@ -1,8 +1,8 @@
 /*---------------------------------------------------------------------------
 * Author: Amal Medhi
 * Date:   2017-01-18 20:55:56
-* Last Modified by:   amedhi
-* Last Modified time: 2017-01-26 11:13:20
+* Last Modified by:   Amal Medhi, amedhi@macbook
+* Last Modified time: 2017-01-28 12:34:34
 * Copyright (C) Amal Medhi, amedhi@iisertvm.ac.in
 *----------------------------------------------------------------------------*/
 #ifndef PHYSICAL_H
@@ -132,6 +132,7 @@ public:
   void set_natural(const double& x) 
     { natural_=x; cgs_=(natural_*unit.eV())/unit.c(); }
 };
+
 
 class Force : public PhysicalQuantity
 {

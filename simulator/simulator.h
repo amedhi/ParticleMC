@@ -41,7 +41,7 @@ private:
   unsigned num_electrons{1};
   std::vector<particle::Particle> electrons;
   std::vector<particle::Particle> holes;
-  kspace::ConductionBand CBand;
+  kspace::EnergyBand CBand;
 
   void init_particle_states(void);
 };

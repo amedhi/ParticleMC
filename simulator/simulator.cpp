@@ -3,8 +3,8 @@
 * All rights reserved.
 * Author: Amal Medhi
 * Date:   2016-03-09 15:27:50
-* Last Modified by:   amedhi
-* Last Modified time: 2017-01-26 10:37:19
+* Last Modified by:   Amal Medhi, amedhi@macbook
+* Last Modified time: 2017-01-27 21:54:13
 *----------------------------------------------------------------------------*/
 #include <iomanip>
 #include "simulator.h"
@@ -12,7 +12,7 @@
 namespace mc {
 
 Simulator::Simulator(input::Parameters& parms) 
-  : system(parms), CBand(system)
+  : system(parms), CBand(kspace::band_id::CB, system)
 {
   //Model::construct(LatticeGraph::lattice(), parms);
   num_electrons = 1;
